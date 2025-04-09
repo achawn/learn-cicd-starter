@@ -28,6 +28,12 @@ jobs:
       - name: Style
         run: test -z $(go fmt ./...)
 
+      - name: PWD
+        run: pwd
+
+      - name: List
+        run: ls -la
+
       - name: Install staticcheck
         run: go install honnef.co/go/tools/cmd/staticcheck@latest
 
