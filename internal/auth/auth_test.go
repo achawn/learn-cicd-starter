@@ -24,7 +24,7 @@ func TestGetAPIKey(t *testing.T) {
 
 	h.Del("Authorization")
 	h.Add("Authorization", "ApiKey 1234567890")
-	key, err = GetAPIKey(h)
+	key, _ = GetAPIKey(h)
 	if key != "1234567890" {
 		t.Errorf("Does not return key. Returns: '%v'", key)
 	}
