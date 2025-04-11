@@ -25,4 +25,4 @@ jobs:
         uses: 'google-github-actions/auth@2'
         with:
           project_id: notely-456515
-          credentials_json: '${{ secrets.GCP_CREDENTIALS }}
+          credentials_json: '${{ secrets.GCP_CREDENTIALS }}'
