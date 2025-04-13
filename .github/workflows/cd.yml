@@ -43,7 +43,7 @@ jobs:
         run: go install github.com/pressly/goose/v3/cmd/goose@latest
 
       - name: Migrate
-        working_directory: ./sql/schema
+        working-directory: ./sql/schema
         run: goose sqlite "$DATABASE_URL" up
 
       - name: Deploy to Cloud Run
